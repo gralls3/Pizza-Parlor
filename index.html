@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Pizza Parlor</title>
+		<link rel="stylesheet" href=".\css\style.css">
+	</head>
+	
+<body class="center">
+    <div class="banner">
+        
+<!-- Page Banner -->
+        <h1>PIZZA PARLOR</h1>
+<!-- \Page Banner -->
+    </div>
+    
+<!-- Menu Items -->
+<form id="orderForm" onsubmit="getCheckedOptions();return false"> <!--'return false' prevents page refresh on form submit-->
+            <fieldset id="Menu">
+                <legend>SIZE</legend>
+                <input id="Personal" type="radio" class="Option" name="Size" value="Personal Pizza" required>
+                    <label for="Personal">Personal</label><br>
+                <input id="Small" type="radio" class="Option" name="Size" value="Small Pizza" required>
+                    <label for="Small">Small</label><br>
+                <input id="Large" type="radio" class="Option" name="Size" value="Large Pizza" required>
+                    <label for="Large">Large</label><br>
+                <input id="Extra Large" type="radio" class="Option" name="Size" value="X Large Pizza" required>
+                    <label for="Extra Large">Extra Large</label>
+            </fieldset>
+
+            <fieldset id="Menu">
+                <legend>MEATS</legend>
+                <input id="Sausage" type="checkbox" class="Option" name="Meat" value="Sausage">
+                    <label for="Sausage">Sausage</label><br>
+                <input id="Pepperoni" type="checkbox" class="Option" name="Meat" value="Pepperoni">
+                    <label for="Pepperoni">Pepperoni</label><br>
+                <input id="Canadian Bacon" type="checkbox" class="Option" name="Meat" value="Canadian Bacon">
+                    <label for="Canadian Bacon">Canadian Bacon</label><br>
+                <input id="Ground Beef" type="checkbox" class="Option" name="Meat" value="Ground Beef">
+                    <label for="Ground Beef">Ground Beef</label><br>
+                <input id="Anchovy" type="checkbox" class="Option" name="Meat" value="Anchovy">
+                    <label for="Anchovy">Anchovy</label><br>
+                <input id="Chicken" type="checkbox" class="Option" name="Meat" value="Chicken">
+                    <label for="Chicken">Chicken</label>
+            </fieldset>
+
+            <fieldset id="Menu">
+                <legend id="Veggies">VEGGIES</legend>
+                    <input id="Tomatoes" type="checkbox" class="Option" name="Veggies" value="Tomatoes">
+                        <label for="Tomatoes">Tomatoes</label><br>
+                    <input id="Onions" type="checkbox" class="Option" name="Veggies" value="Onions">
+                        <label for="Onions">Onions</label><br>
+                    <input id="Olives" type="checkbox" class="Option" name="Veggies" value="Olives">
+                        <label for="Olives">Olives</label><br>
+                    <input id="Green Peppers" type="checkbox" class="Option" name="Veggies" value="Green Peppers">
+                        <label for="Green Peppers">Green Peppers</label><br>
+                    <input id="Mushrooms" type="checkbox" class="Option" name="Veggies" value="Mushrooms">
+                        <label for="Mushrooms">Mushrooms</label><br>
+                    <input id="Spinach" type="checkbox" class="Option" name="Veggies" value="Spinach">
+                        <label for="Spinach">Spinach</label><br>
+                    <input id="Jalapeno" type="checkbox" class="Option" name="Veggies" value="Jalapenos">
+                        <label for="Jalapeno">Jalapeno</label>
+            </fieldset>
+
+            <fieldset id="Menu">
+                <legend>CHEESE</legend>
+                    <input id="Regular" type="radio" class="Option" name="Cheese" value="Regular Cheese" required>
+                        <label for="Regular">Regular</label><br>
+                    <input id="Extra" type="radio" class="Option" name="Cheese" value="Extra Cheese" required>
+                        <label for="Extra">Extra</label><br>
+                    <input id="No Cheese" type="radio" class="Option" name="Cheese" value="No Cheese" required>
+                        <label for="No Cheese">No Cheese</label>
+            </fieldset>
+
+            <fieldset id="Menu">
+                <legend>SAUCE</legend>
+                    <input id="Marinara" type="radio" class="Option" name="Sauce" value="Marinara Sauce" required>
+                        <label for="Marinara">Marinara</label><br>
+                    <input id="White" type="radio" class="Option" name="Sauce" value="White Sauce" required>
+                        <label for="White">White</label><br>
+                    <input id="Barbeque" type="radio" class="Option" name="Sauce" value="Barbeque Sauce" required>
+                        <label for="Barbeque">Barbeque</label><br>
+                    <input id="No Sauce" type="radio" class="Option" name="Sauce" value="No Sauce" required>
+                        <label for="No Sauce">No Sauce</label>
+            </fieldset>
+         
+            <fieldset id="Menu">
+                <legend>CRUST</legend>
+                    <input id="Plain" type="radio" class="Option" name="Crust" value="Plain" required>
+                        <label for="Plain">Plain</label><br>
+                    <input id="Garlic Butter" type="radio" class="Option" name="Crust" value="Garlic Butter" required>
+                        <label for="Garlic Butter">Garlic Butter</label><br>
+                    <input id="Cheese Stuffed" type="radio" class="Option" name="Crust" value="Cheese Stuffed" required>
+                        <label for="Cheese Stuffed">Cheese Stuffed</label><br>
+                    <input id="Spicy" type="radio" class="Option" name="Crust" value="Spicy" required>
+                        <label for="Spicy">Spicy</label><br>
+                    <input id="House Special" type="radio" class="Option" name="Crust" value="House Special" required>
+                        <label for="House Special">House Special</label>
+            </fieldset>
+<!-- \Menu Items -->
+    
+<!-- Submit Buttom -->
+<p><button  type="submit">SUBMIT ORDER</button></p>
+<!-- /Submit Buttom -->
+
+    </form>
+
+<!-- Invoice -->
+    <h2 class="invoice">INVOICE</h2>
+    <p id="Invoice"></p>
+    <p id="Total"></p>
+    <a name="invoice"></a>
+<!-- \Invoice -->
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>

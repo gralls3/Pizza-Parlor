@@ -1,0 +1,52 @@
+
+.banner {
+    font-family:arial;
+    font-weight:200;
+    text-align: center;
+}
+
+.invoice {
+    font-family:courier;
+    text-align: center;
+}
+
+#Invoice    {
+    font-family:courier;
+    text-align: center;
+}
+
+#Total    {
+    font-family:courier;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px groove red;
+    padding: 10px;
+}
+
+fieldset {
+    border:2px solid black;
+    font-family:arial;
+    margin: 1em 1em 1em;
+}
+
+legend  {
+    padding: 0.1em 0.25em;
+    border:2px solid black;
+    color:red;
+    font-size:90%;
+    text-align:left;
+    font-family:arial;
+}
+
+button[type=submit]  {
+    background-color:red;
+    font-family:arial;
+    border:none;
+    color:white;
+    font-size: 16px;
+    padding: 10px 24px;
+}
